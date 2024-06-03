@@ -1,3 +1,4 @@
+import { Palette } from "@/src/icons/icons";
 import { router, useNavigation } from "expo-router";
 import { FlatList, TouchableOpacity, View, Image, StyleSheet, Text } from "react-native";
 
@@ -17,9 +18,9 @@ export default function ComponentList() {
     }
     
     return (
-        <View style={{ padding: 30, backgroundColor: "#fff" }}>
+        <View style={{ padding: 30, backgroundColor: "#fff" }}> 
         <Text style={{ fontWeight: 500, fontSize: 24, color: "#00583C" }}> Experiencia Digital</Text>
-        <Text style={{ fontSize: 16, marginTop: 16, color: "#008866" }}>🎨 Design System</Text>
+        <Text style={{ fontSize: 16, marginTop: 16, color: "#008866" }}><Palette/> Design System</Text>
   
         <FlatList style={styles.flatList}
           data={[
