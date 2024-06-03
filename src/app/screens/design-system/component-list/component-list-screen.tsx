@@ -1,6 +1,8 @@
 import { Palette } from "@/src/icons/icons";
+import { redColors } from "@/src/packages/ui/constants/token-colors";
 import { router, useNavigation } from "expo-router";
 import { FlatList, TouchableOpacity, View, Image, StyleSheet, Text } from "react-native";
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 
 export default function ComponentList() {
@@ -19,8 +21,8 @@ export default function ComponentList() {
     
     return (
         <View style={{ padding: 30, backgroundColor: "#fff" }}> 
-        <Text style={{ fontWeight: 500, fontSize: 24, color: "#00583C" }}> Experiencia Digital</Text>
-        <Text style={{ fontSize: 16, marginTop: 16, color: "#008866" }}><Palette/> Design System</Text>
+        <Text style={{ fontWeight: 500, fontSize: 24, color: "#00583C" }}> Experiencia Digital</Text> 
+        <Text style={{ fontSize: 16, marginTop: 16, color: "#008866" }}><Palette size = { 20 } color = {redColors.red100}/> Design System</Text>
   
         <FlatList style={styles.flatList}
           data={[
